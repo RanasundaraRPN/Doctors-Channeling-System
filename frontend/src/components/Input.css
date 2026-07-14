@@ -1,0 +1,58 @@
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #2a4038;
+    border-radius: var(--radius-full);
+    /* Pill shape as per design? Or rounded rect? Image looks like rounded rect with high radius or full pill. Let's try 30px */
+    border-radius: 20px;
+    /* Looks roughly like this in image */
+    padding: 14px 20px;
+    padding-right: 45px;
+    /* Space for icon */
+    color: var(--color-text-main);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 1px var(--color-primary);
+    /* Subtle glow */
+    background-color: rgba(0, 230, 96, 0.02);
+}
+
+.input-field::placeholder {
+    color: #4a6055;
+}
+
+.input-icon,
+.password-toggle {
+    position: absolute;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-toggle:hover svg {
+    stroke: var(--color-primary);
+}

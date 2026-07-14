@@ -1,0 +1,188 @@
+.book-appt-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--color-bg-dark);
+}
+
+.book-appt-main {
+    flex: 1;
+    margin-left: 280px;
+    padding: 32px 48px;
+}
+
+/* Header */
+.book-appt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #fff;
+}
+
+.page-title {
+    font-size: 2.25rem;
+    color: #fff;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.page-desc {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    margin: 0 0 32px 0;
+}
+
+/* Progress Section */
+.progress-section {
+    background-color: #0d2820;
+    /* Darker green container */
+    border-radius: 24px;
+    padding: 24px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 32px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.step-label {
+    color: #00d06c;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.step-completion {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.step-title {
+    color: #fff;
+    font-size: 1.25rem;
+    margin: 0 0 16px 0;
+}
+
+.progress-track {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #00d06c;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #00d06c 0%, #22c55e 100%);
+}
+
+/* Search & Filters */
+.search-filter-section {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.search-bar-lg {
+    flex: 1;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.08);
+    /* Lighter dark */
+    border-radius: var(--radius-full);
+}
+
+.search-icon-lg {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+}
+
+.search-bar-lg input {
+    width: 100%;
+    height: 52px;
+    background: transparent;
+    border: none;
+    padding: 0 20px 0 52px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.filter-btn-lg {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border: none;
+    padding: 0 24px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.filter-btn-lg:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.filter-pills-row {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+}
+
+.pill-btn {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--radius-full);
+    color: var(--color-text-muted);
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.pill-btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+.pill-btn.active {
+    background-color: #00d06c;
+    color: #000;
+}
+
+/* Grid */
+.doctor-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}

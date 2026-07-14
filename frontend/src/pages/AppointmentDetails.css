@@ -1,0 +1,341 @@
+.layout-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #0c140d;
+    color: #fff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.page-header {
+    margin-bottom: 32px;
+}
+
+.header-title-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.header-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 8px;
+    font-size: 1.1rem;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+}
+
+/* Widgets */
+.widget {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.widget-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.widget-header h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.widget-icon {
+    color: #22c55e;
+}
+
+/* Doctor Card */
+.details-doc-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 32px;
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.doc-avatar-container {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.doc-avatar {
+    width: 140px;
+    height: 150px;
+    border-radius: 60px;
+    object-fit: cover;
+}
+
+.verified-badge {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: #22c55e;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 3px solid #0c140d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doc-info {
+    flex: 1;
+}
+
+.doc-name-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.doc-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.doc-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 0.9rem;
+}
+
+.review-count {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.doc-specialty {
+    color: #22c55e;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.doc-bio {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.doc-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* Date/Time Widget */
+.time-cards-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.time-card {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 16px 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.time-card-label {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;
+}
+
+.time-card-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.video-info-box {
+    background: rgba(34, 197, 94, 0.05);
+    border: 1px solid rgba(34, 197, 94, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.video-info-box .video-text h4 {
+    margin: 0 0 4px 0;
+    color: #fff;
+}
+
+.video-info-box .video-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Instructions */
+.instructions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.instructions-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+.check-icon {
+    color: #22c55e;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+/* Manage Tool */
+.widget-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.manage-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Buttons */
+.btn-primary-gradient {
+    background: linear-gradient(135deg, #22c55e 0%, #06b6d4 100%);
+    color: #000;
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: opacity 0.2s;
+}
+
+.btn-secondary-full {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 16px;
+    border-radius: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-danger-outline {
+    background: transparent;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+    padding: 16px;
+    border-radius: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-secondary-outline {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 99px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.btn-primary-gradient:hover {
+    opacity: 0.9;
+}
+
+/* Fees Widget Styles */
+.fees-widget {
+    background: rgba(34, 197, 94, 0.03);
+    border: 1px solid rgba(34, 197, 94, 0.1);
+}
+
+.fee-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.fee-value {
+    color: #fff;
+    font-weight: 500;
+}
+
+.fee-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 16px 0;
+}
+
+.grand-total {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.grand-total .fee-value {
+    color: #22c55e;
+}
+
+.payment-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(34, 197, 94, 0.1);
+    color: #4ade80;
+    padding: 8px 16px;
+    border-radius: 99px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    width: fit-content;
+}

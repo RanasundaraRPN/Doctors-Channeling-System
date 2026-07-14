@@ -1,0 +1,31 @@
+.btn-primary {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: #000;
+    /* Contrast black text on neon green */
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 14px;
+    border-radius: 30px;
+    /* Full pill */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 230, 96, 0.3);
+    background-color: var(--color-primary-hover);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-icon {
+    margin-left: 4px;
+}

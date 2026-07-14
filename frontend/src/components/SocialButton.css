@@ -1,0 +1,23 @@
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #2a4038;
+    border-radius: 30px;
+    padding: 12px;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-social:hover {
+    border-color: #4a6055;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}

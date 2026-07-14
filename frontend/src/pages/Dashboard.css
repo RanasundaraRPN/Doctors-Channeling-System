@@ -1,0 +1,68 @@
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--color-bg-dark);
+}
+
+.dashboard-main {
+    flex: 1;
+    margin-left: 280px;
+    /* Sidebar width */
+    padding: 32px 48px;
+    overflow-y: auto;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* 3 parts main, 1 part side */
+    gap: 32px;
+}
+
+.grid-main-col {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.grid-side-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dashboard-section {
+    position: relative;
+}
+
+.section-label {
+    font-size: 1.1rem;
+    color: var(--color-text-main);
+    margin: 0 0 16px 0;
+    font-weight: 600;
+}
+
+.view-calendar-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.stats-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Override StatCard text alignment for sidebar context if needed */
+.grid-side-col .stat-card {
+    border-left: 4px solid var(--color-primary);
+    /* Optional accent */
+}
+
+/* Adjustments for specific widgets in this layout */

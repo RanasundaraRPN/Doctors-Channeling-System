@@ -1,0 +1,166 @@
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background-color: var(--color-bg-darker);
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid var(--color-border);
+    z-index: 100;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 48px;
+    color: var(--color-text-main);
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #00d06c;
+    /* Green logo */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    flex-shrink: 0;
+}
+
+.logo-text-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-brand {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.logo-tag {
+    font-size: 0.65rem;
+    color: #00d06c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 16px;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    transition: all 0.2s;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-item:hover {
+    color: var(--color-text-main);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-item.active {
+    background: linear-gradient(90deg, rgba(0, 208, 108, 0.15) 0%, rgba(0, 208, 108, 0.05) 100%);
+    color: #00d06c;
+    border-right: 3px solid #00d06c;
+    /* Maybe a side border or just bg? Image has specific bg */
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Specific override for active state to match image exactly: Green Background block */
+.nav-item.active {
+    background-color: transparent;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+    color: #fff;
+    /* Image shows white text on active? Actually looks like green pill or highlight */
+    /* Wait, looking closer at image: "Profile Settings" is active. It has a Dark Green background pill */
+    background-color: #0a2e23;
+    background: linear-gradient(90deg, #0f352b 0%, transparent 100%);
+    color: #00d06c;
+    /* Green text */
+    border-left: 3px solid #00d06c;
+    border-right: none;
+    border-radius: 4px;
+    /* More square */
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.user-widget-row {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer-user-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+.footer-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.footer-email {
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logout-icon-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.logout-icon-btn:hover {
+    color: #ef4444;
+}

@@ -1,0 +1,47 @@
+.daily-tip-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    /* Fill available height */
+}
+
+.tip-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.tip-icon {
+    color: #ffd700;
+    /* Gold for lightbulb */
+}
+
+.tip-title {
+    color: var(--color-text-main);
+    font-weight: 600;
+    margin: 0;
+}
+
+.tip-content {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    z-index: 1;
+    /* Ensure text is above graphic */
+    position: relative;
+}
+
+/* Optional graphic element */
+.tip-bg-graphic {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Very subtle circle */
+    border-radius: 50%;
+}

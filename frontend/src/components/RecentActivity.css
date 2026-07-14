@@ -1,0 +1,78 @@
+.recent-activity-container {
+    height: 100%;
+    /* Fill available height in grid */
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.icon-button-ghost {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.icon-button-ghost:hover {
+    color: var(--color-text-main);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.activity-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Circle according to image */
+    /* Or rounded square if preferred. Image shows Circle. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.activity-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin: 0 0 4px 0;
+}
+
+.activity-desc {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin: 0 0 4px 0;
+}
+
+.activity-time {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+}

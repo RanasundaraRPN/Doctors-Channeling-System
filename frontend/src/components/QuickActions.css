@@ -1,0 +1,54 @@
+.quick-actions-container {
+    margin-bottom: 32px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    color: var(--color-text-main);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.quick-action-card {
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    /* Override padding for a tighter look or keep default */
+    min-height: 140px;
+    justify-content: space-between;
+}
+
+.quick-action-card:hover {
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.08);
+    /* Slightly lighter */
+}
+
+.action-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.action-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: var(--color-text-main);
+}
+
+.action-subtitle {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin: 0;
+}

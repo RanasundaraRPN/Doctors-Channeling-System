@@ -1,0 +1,190 @@
+.auth-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Left Side - Hero */
+.auth-left {
+    flex: 1;
+    background: linear-gradient(135deg, #051410 0%, #082019 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    justify-content: space-between;
+}
+
+/* Texture/Gradient Overlay */
+.auth-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 30%, rgba(0, 230, 96, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 10;
+}
+
+.brand-icon {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-text {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+}
+
+.hero-content {
+    margin-bottom: 40px;
+    z-index: 10;
+    position: relative;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 20;
+    /* Ensure text is above background shapes */
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.hero-text h1 .highlight {
+    color: var(--color-primary);
+}
+
+.hero-text p {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    max-width: 480px;
+    margin-bottom: 48px;
+    line-height: 1.6;
+}
+
+/* Floating Shapes (Glassmorphism) */
+.glass-shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.shape-1 {
+    width: 100px;
+    height: 300px;
+    /* Cylinder placeholder */
+    top: -200px;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(-5deg);
+}
+
+.doctors-preview {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatars {
+    display: flex;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--color-bg-dark);
+    margin-right: -12px;
+    background-color: #2a4d40;
+    /* Placeholder color */
+    background-size: cover;
+}
+
+.a1 {
+    background-image: url('https://i.pravatar.cc/100?img=11');
+}
+
+.a2 {
+    background-image: url('https://i.pravatar.cc/100?img=33');
+}
+
+.a3 {
+    background-image: url('https://i.pravatar.cc/100?img=53');
+}
+
+.doctors-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.doctors-info .count {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.doctors-info .status {
+    font-size: 0.8rem;
+    color: var(--color-primary);
+}
+
+/* Right Side - Form */
+.auth-right {
+    flex: 1;
+    /* Split 50/50 roughly, or maybe 40/60? Design looks 45/55 */
+    background-color: var(--color-bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .auth-layout {
+        flex-direction: column;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .auth-left {
+        padding: 30px;
+        min-height: 400px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .auth-right {
+        padding: 40px 20px;
+    }
+}

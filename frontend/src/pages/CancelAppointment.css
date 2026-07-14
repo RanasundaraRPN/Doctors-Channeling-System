@@ -1,0 +1,204 @@
+.cancel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.back-nav {
+    margin-bottom: 24px;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #fff;
+}
+
+/* Summary Card */
+.cancel-summary-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(34, 197, 94, 0.1);
+    border-radius: 32px;
+    padding: 32px;
+}
+
+.summary-doc-info {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.summary-doc-avatar {
+    width: 100px;
+    height: 120px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.summary-doc-name {
+    font-size: 1.5rem;
+    margin: 12px 0 4px 0;
+}
+
+.summary-doc-title {
+    color: #22c55e;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+}
+
+.summary-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stars {
+    color: #fbbf24;
+}
+
+.count {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+}
+
+.summary-meta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.meta-item svg {
+    color: #22c55e;
+}
+
+.meta-label {
+    color: rgba(255, 255, 255, 0.4);
+    width: 100px;
+}
+
+.meta-value {
+    font-weight: 600;
+}
+
+/* Policy Alert */
+.policy-alert {
+    background: rgba(153, 27, 27, 0.1);
+    border: 1px solid rgba(153, 27, 27, 0.2);
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.alert-icon {
+    color: #ef4444;
+    flex-shrink: 0;
+}
+
+.alert-content h4 {
+    margin: 0 0 8px 0;
+    color: #f87171;
+}
+
+.alert-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Form */
+.cancel-form .input-group {
+    margin-bottom: 24px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.input-group label span {
+    color: #22c55e;
+    font-size: 0.8rem;
+    margin-left: 4px;
+}
+
+.select-input,
+.textarea-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 16px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.select-input {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2322c55e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 20px;
+}
+
+.textarea-input {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn-danger-full {
+    background: #22c55e;
+    /* Matching gradient from image if possible, but green in mock */
+    background: linear-gradient(135deg, #22c55e 0%, #10b981 100%);
+    color: #000;
+    border: none;
+    padding: 20px;
+    border-radius: 99px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.btn-secondary-text {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 20px;
+    border-radius: 99px;
+    font-weight: 600;
+    cursor: pointer;
+}
