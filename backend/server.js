@@ -10,7 +10,6 @@ const doctorRoutes = require('./routes/doctors');
 const userRoutes = require('./routes/users');
 
 const app = express();
-const PORT = process.env.PORT || 5001;
 
 app.use(cors());
 app.use(express.json());
@@ -25,6 +24,13 @@ app.get('/', (req, res) => {
     res.send('MediChannel API is running...');
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+// 👇 මෙන්න මේ කොටස විතරක් වෙනස් කරන්න
+if (process.env.NODE_ENV !== 'production') {
+    const PORT = process.env.PORT || 5001;
+    app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`);
+    });
+}
+
+// Vercel එකට අත්‍යවශ්‍යයි!
+module.exports = app;
